@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -21,7 +22,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'September 22, 2019',
+                      DateFormat.yMMMMd('en_US').format(DateTime.now()),
                       style: TextStyle(
                         fontSize: 17.0,
                       ),
