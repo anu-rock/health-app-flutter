@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:health_app/constants.dart';
 
 class HydrationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF52BEFF),
+      backgroundColor: kSwatchBlueColor,
       appBar: AppBar(
-        backgroundColor: Color(0xFF52BEFF),
+        backgroundColor: kSwatchBlueColor,
         elevation: 0.0,
       ),
       body: SafeArea(

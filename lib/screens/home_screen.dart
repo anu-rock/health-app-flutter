@@ -41,8 +41,8 @@ class HomeScreen extends StatelessWidget {
                   children: <Widget>[
                     Expanded(
                       child: Tile(
-                        backgroundColor: Color(0xFF52BEFF),
-                        borderColor: Color(0xFF52BEFF),
+                        backgroundColor: kSwatchBlueColor,
+                        borderColor: kSwatchBlueColor,
                         textColor: Colors.white,
                         icon: Icons.opacity,
                         title: '4',
@@ -99,8 +99,8 @@ class HomeScreen extends StatelessWidget {
                     ),
                     Expanded(
                       child: Tile(
-                        backgroundColor: Color(0xFFFE385E),
-                        borderColor: Color(0xFFFE385E),
+                        backgroundColor: kSwatchPinkColor,
+                        borderColor: kSwatchPinkColor,
                         textColor: Colors.white,
                         icon: Icons.favorite,
                         title: '118',
