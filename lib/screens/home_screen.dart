@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:health_app/widgets/tile.dart';
+import 'package:health_app/constants.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -52,9 +53,9 @@ class HomeScreen extends StatelessWidget {
                     Expanded(
                       flex: 2,
                       child: Tile(
-                        backgroundColor: Colors.white,
-                        borderColor: Color(0xFFE8EAEE),
-                        textColor: Colors.black,
+                        backgroundColor: kTileDefaultBackgroundColor,
+                        borderColor: kTileDefaultBorderColor,
+                        textColor: kTileDefaultTextColor,
                         title: '12345',
                         subtitle: 'steps',
                       ),
@@ -68,9 +69,9 @@ class HomeScreen extends StatelessWidget {
                   children: <Widget>[
                     Expanded(
                       child: Tile(
-                        backgroundColor: Colors.white,
-                        borderColor: Color(0xFFE8EAEE),
-                        textColor: Colors.black,
+                        backgroundColor: kTileDefaultBackgroundColor,
+                        borderColor: kTileDefaultBorderColor,
+                        textColor: kTileDefaultTextColor,
                         title: '2878',
                         subtitle: 'kcal',
                       ),
