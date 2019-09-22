@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:health_app/widgets/tile.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -36,53 +37,13 @@ class HomeScreen extends StatelessWidget {
                 Row(
                   children: <Widget>[
                     Expanded(
-                      child: Container(
-                        padding: EdgeInsets.all(20.0),
-                        height: 175.0,
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                              color: Color(0xFF52BEFF),
-                              style: BorderStyle.solid,
-                              width: 2.0),
-                          borderRadius: BorderRadius.circular(30.0),
-                          color: Color(0xFF52BEFF),
-                        ),
-                        child: Column(
-                          children: <Widget>[
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: <Widget>[
-                                Opacity(
-                                  opacity: 1.0,
-                                  child: Icon(
-                                    Icons.opacity,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Text(
-                                  '4',
-                                  style: TextStyle(
-                                    fontSize: 35.0,
-                                    fontWeight: FontWeight.w400,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                                Text(
-                                  'cups',
-                                  style: TextStyle(
-                                    fontSize: 20.0,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
+                      child: Tile(
+                        backgroundColor: Color(0xFF52BEFF),
+                        borderColor: Color(0xFF52BEFF),
+                        textColor: Colors.white,
+                        icon: Icons.opacity,
+                        title: '4',
+                        subtitle: 'cups',
                       ),
                     ),
                     SizedBox(
@@ -90,47 +51,12 @@ class HomeScreen extends StatelessWidget {
                     ),
                     Expanded(
                       flex: 2,
-                      child: Container(
-                        padding: EdgeInsets.all(20.0),
-                        height: 175.0,
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                              color: Color(0xFFE8EAEE),
-                              style: BorderStyle.solid,
-                              width: 2.0),
-                          borderRadius: BorderRadius.circular(30.0),
-                        ),
-                        child: Column(
-                          children: <Widget>[
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: <Widget>[
-                                Opacity(
-                                  opacity: 0.0,
-                                  child: Icon(Icons.opacity),
-                                ),
-                              ],
-                            ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Text(
-                                  '12345',
-                                  style: TextStyle(
-                                    fontSize: 35.0,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                ),
-                                Text(
-                                  'steps',
-                                  style: TextStyle(
-                                    fontSize: 20.0,
-                                  ),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
+                      child: Tile(
+                        backgroundColor: Colors.white,
+                        borderColor: Color(0xFFE8EAEE),
+                        textColor: Colors.black,
+                        title: '12345',
+                        subtitle: 'steps',
                       ),
                     ),
                   ],
