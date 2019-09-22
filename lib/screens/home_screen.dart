@@ -77,6 +77,35 @@ class HomeScreen extends StatelessWidget {
                       ),
                     )
                   ],
+                ),
+                SizedBox(
+                  height: 20.0,
+                ),
+                Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: Tile(
+                        backgroundColor: kTileDefaultBackgroundColor,
+                        borderColor: kTileDefaultBorderColor,
+                        textColor: kTileDefaultTextColor,
+                        title: '24',
+                        subtitle: 'min',
+                      ),
+                    ),
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                    Expanded(
+                      child: Tile(
+                        backgroundColor: Color(0xFFFE385E),
+                        borderColor: Color(0xFFFE385E),
+                        textColor: Colors.white,
+                        icon: Icons.favorite,
+                        title: '118',
+                        subtitle: 'bpm',
+                      ),
+                    ),
+                  ],
                 )
               ],
             ),
