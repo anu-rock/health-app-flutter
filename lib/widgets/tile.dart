@@ -34,9 +34,12 @@ class Tile extends StatelessWidget {
             children: <Widget>[
               Opacity(
                 opacity: this.icon != null ? 1.0 : 0.0,
-                child: Icon(
-                  this.icon,
-                  color: this.textColor,
+                child: Hero(
+                  tag: this.subtitle,
+                  child: Icon(
+                    this.icon,
+                    color: this.textColor,
+                  ),
                 ),
               ),
             ],

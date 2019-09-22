@@ -16,10 +16,13 @@ class HydrationScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Icon(
-              Icons.opacity,
-              size: 80.0,
-              color: Colors.white,
+            Hero(
+              tag: 'cups',
+              child: Icon(
+                Icons.opacity,
+                size: 80.0,
+                color: Colors.white,
+              ),
             ),
             SizedBox(
               height: 20.0,
