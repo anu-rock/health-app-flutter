@@ -40,13 +40,18 @@ class HomeScreen extends StatelessWidget {
                 Row(
                   children: <Widget>[
                     Expanded(
-                      child: Tile(
-                        backgroundColor: kSwatchBlueColor,
-                        borderColor: kSwatchBlueColor,
-                        textColor: Colors.white,
-                        icon: Icons.opacity,
-                        title: '4',
-                        subtitle: 'cups',
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, 'hydration');
+                        },
+                        child: Tile(
+                          backgroundColor: kSwatchBlueColor,
+                          borderColor: kSwatchBlueColor,
+                          textColor: Colors.white,
+                          icon: Icons.opacity,
+                          title: '4',
+                          subtitle: 'cups',
+                        ),
                       ),
                     ),
                     SizedBox(
