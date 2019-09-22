@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:health_app/screens/home_screen.dart';
+import 'package:health_app/screens/hydration_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +10,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(fontFamily: 'Signika'),
       title: 'Health App',
-      home: HomeScreen(),
+      routes: {
+        'home': (context) => HomeScreen(),
+        'hydration': (context) => HydrationScreen(),
+      },
+      initialRoute: 'home',
     );
   }
 }
