@@ -19,6 +19,20 @@ This is how your app should look like after you've followed all steps:
 
 <img src="https://user-images.githubusercontent.com/1288616/65385187-22572b80-dd49-11e9-8237-cfe2bc171c6d.gif" alt="Screenshot of Flutter-based Health App" width="300" />
 
+## Bonus Challenges
+
+Once you are done with your goal, try completing the following additional challenges to earn extra brownie points.
+
+- Replace the font Signika with [Gilroy](https://www.tinkov.info/gilroy.html), the one used in the original design.
+
+- Convert `HyderationScreen` into a [stateful widget](https://flutter.dev/docs/development/ui/interactive) to keep track of cups of water consumed. Then display NumberTile widgets based on the cups count.
+
+- Add [custom animations](https://flutter.dev/docs/development/ui/animations/tutorial) using `AnimationController`, `Animation` and other related classes. Let your creativity flow.
+
+- **MEGA BONUS:** Display data from your device's underlying fitness tracking system (_HealthKit_ on iOS and _GoogleFit_ on Android). Hint: make use of a Flutter package such as [FitKit](https://pub.dev/packages/fit_kit).
+
+Feel free to share your creation by opening an issue here.
+
 ## Author
 
 Anurag Bhandari  
