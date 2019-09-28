@@ -7,9 +7,10 @@ A very simple health app based on [this beautiful design](https://dribbble.com/s
 ## Getting Started
 
 1. The very first thing to do is—you guessed it—clone this repository 😃.
-2. Once you've clone the repo, open the project in Visual Studio Code or Android Studio.
-3. Hopefully, all Dart dependencies will automatically be fetched by your IDE. If not, do a [manual pub get](https://dart.dev/tools/pub/cmd/pub-get).
-4. Use the commit history as your step-by-step guide to implementing the above design in your own Flutter app. Read it in chronological order, starting from the oldest.
+2. Switch to the initial commit by running this command while inside the cloned directory: `git reset --hard c82503509abbbec9fdb1950715181164be1ffbc6`.
+3. Open the project in Visual Studio Code or Android Studio.
+4. Hopefully, all Dart dependencies will automatically be fetched by your IDE. If not, do a [manual pub get](https://dart.dev/tools/pub/cmd/pub-get).
+5. Use the commit history as your step-by-step guide to implementing the above design in your own Flutter app. Read it in chronological order, starting from the oldest (ignore the initial commit, of course).
 
 📬 If stuck, you may drop me an email at [ab@anuragbhandari.com](mailto:ab@anuragbhandari.com).
 
